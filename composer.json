@@ -1,0 +1,37 @@
+{
+	"name": "appweaver/appkit",
+	"description": "Appkit",
+	"license": "MIT",
+	"type": "project",
+	"version": "0.0.1",
+	"authors": [
+		{
+			"name": "Maarten Thiebou"
+		}
+	],
+	"require": {
+		"getappkit/core": "^0.0.2"
+	},
+	"config": {
+
+		"platform-check": false
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "app"
+		}
+	},
+	"scripts": {
+		"start": [
+			"Composer\\Config::disableProcessTimeout",
+			"@php -S localhost:8000 -t public/"
+		],
+		"analyze:composer": "composer validate --strict --no-check-version --no-check-all",
+		"test": "phpunit --stderr",
+		"test:coverage": "phpunit --stderr --coverage-html=tests/coverage"
+	},
+
+	"require-dev": {
+		"phpunit/phpunit": "^9.6"
+	}
+}
