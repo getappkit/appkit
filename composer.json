@@ -10,7 +10,7 @@
 		}
 	],
 	"require": {
-		"getappkit/core": "^0.0.5"
+		"getappkit/core": "^0.0.7"
 	},
 	"config": {
 
