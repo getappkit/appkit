@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Http\Response;
+use Appkit\Http\Response;
 use Psr\Http\Message\ServerRequestInterface;
 
 class PhotoController
