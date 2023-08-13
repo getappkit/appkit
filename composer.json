@@ -10,7 +10,9 @@
 		}
 	],
 	"require": {
-		"getappkit/core": "^0.0.7"
+		"getappkit/core": "^0.0.7",
+		"doctrine/migrations": "^3.6",
+		"symfony/console": "^5.4"
 	},
 	"config": {
 
